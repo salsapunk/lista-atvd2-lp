@@ -155,17 +155,18 @@ pagamento = int(input('Escolha o método de pagamento com base nos descontos: \n
 '3. Parcelando no cartão em duas vezes, preço normal sem juros. \n' \
 '4. Parcelando no cartão três vezes ou mais, preço normal do produto mais juros de 10%. \n'
 '> '))
-if pagamento == 1:
-    valor_final = valor - (valor*0.15)
-    print(f'O valor final é {valor_final}')
-elif pagamento == 2:
-    valor_final = valor - (valor*0.1)
-    print(f'O valor final é {valor_final}')
-elif pagamento == 3:
-    print(f'O valor final é {valor}')
-else:
-    valor_final = round(valor*1.1)
-    print(f'O valor final é {valor_final}')
+match pagamento:
+    case 1:
+        valor_final = valor - (valor*0.15)
+        print(f'O valor final é {valor_final}')
+    case 2:
+        valor_final = valor - (valor*0.1)
+        print(f'O valor final é {valor_final}')
+    case 3:
+        print(f'O valor final é {valor}')
+    case 4:
+        valor_final = round(valor*1.1)
+        print(f'O valor final é {valor_final}')
 
 
 print()
@@ -254,6 +255,7 @@ print()
 print('Essa é a questão 19: \n')
 print('Algoritmo que imprime a tabuada de 1 a 10.')
 i = 1
+y = 1
 while i < 11:
     print(f'Tabuada de {i}')
     print(f'{i}* 1 = {i*1}')

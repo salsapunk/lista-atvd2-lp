@@ -197,7 +197,7 @@ print()
 
 print('Essa é a questão 15: \n')
 print('Algoritmo que lê o ano em que uma pessoa nasceu e imprime na tela quantos anos, meses e dias essa pessoa já viveu (Ano = 365d, Mês = 30). \n')
-#
+print('Não consegui fazer')                                                                                                                           
 
 
 print()

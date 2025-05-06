@@ -101,8 +101,8 @@ print()
 
 print('Essa é a questão 9: \n')
 print('Algoritmo que calcula o IMC de uma pessoa. \n')
-peso = int(input('Digite seu peso em quilos: '))
-altura = int(input('Digite sua altura em centímetros: '))/100
+peso = float(input('Digite seu peso em quilos: '))
+altura = float(input('Digite sua altura em centímetros: '))/100
 imc = peso/(altura*altura)
 imc = round(imc, 2)
 if imc <= 18.5:
